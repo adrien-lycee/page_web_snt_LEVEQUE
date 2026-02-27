@@ -1,0 +1,176 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; 
+  scroll-behavior: smooth; 
+}
+
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.somaire_container{
+  display: flex;
+  margin-top:3rem;
+
+}
+
+.sommaire{
+  color: white;
+  display: flex;
+  margin: 10px 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.sommaire > a{
+  color: white;
+  text-decoration: none;
+
+
+}
+
+.progression-bar{
+  float: left;
+  background-color: white;
+  position:fixed;
+  bottom: 0;
+  animation: expansion 1s linear;
+  animation-timeline: scroll();
+  z-index: 5;
+  height: 10px;
+  border-radius: 10px;
+}
+
+@keyframes expansion {
+  from {
+    width: 1vw;
+  }
+
+  to {
+    width: 100vw
+  }
+}
+
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+
+
+/* vue image et titre */
+.image-parallax {
+  position: relative;
+  height: 70vh;
+
+  /* Parallaxe */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+.image-parallax h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.2);
+  padding: 20px 40px;
+  border: 3px solid white;
+  backdrop-filter: blur(3px);
+  text-align: center;
+}
+
+/*bloc qui cache l'image*/
+.content-block {
+  position: relative;
+  padding: 80px 20px;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.3);
+}
+
+.text-wrapper {
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.text-wrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-wrapper h4 {
+  font-size: 1.25rem ;
+}
+
+/* images de fond */
+#section1 > .image-parallax {
+  background-image: url('https://cdn.prod.website-files.com/601057763f823a0bf65a8071/633aafcc0eb880801c14093a_article%20inge%CC%81nieur%20informatique.png');
+}
+#section2 > .image-parallax {
+  background-image: url('https://mesinfos.fr/content/articles/922/A189922/initial-bem-polytechnique-paris-saclay.jpg');
+}
+#section3 > .image-parallax {
+  background-image: url('https://lyceejaydebeaufort.fr/wp-content/uploads/2024/10/cropped-LOGO-JDB-Couleurs-Bis-.png');
+}
+
+/* couleurs de fond */
+#section1 > .content-block {
+  background-color: #132e38;
+  color: white;
+}
+
+#section2 > .content-block {
+  background-color: #135e47;
+  color: white;
+}
+
+#section3 > .content-block {
+  background-color: rgb(202, 140, 0);
+  color: white;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+  a, a:visited {
+    text-decoration: underline;
+    color:inherit;
+  }
+
